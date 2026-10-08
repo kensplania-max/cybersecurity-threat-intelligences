@@ -15,9 +15,9 @@
 
     <p>Enter an IP address to check its threat information.</p>
 
-    <input 
-        type="text" 
-        id="ipInput" 
+    <input
+        type="text"
+        id="ipInput"
         placeholder="Enter IP Address"
     >
 
@@ -25,7 +25,25 @@
 
     <div id="result">
         <h2>Threat Information</h2>
+
         <p id="status">No IP checked yet.</p>
+
+        <!-- Dashboard Cards -->
+        <div class="card">
+            <h3>IP Address</h3>
+            <p id="ipResult">---</p>
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p id="statusResult">---</p>
+        </div>
+
+        <div class="card">
+            <h3>Threat Level</h3>
+            <p id="threatResult">---</p>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
