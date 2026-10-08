@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Main container */
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+body > p {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* Search area */
+input {
+    width: 70%;
+    padding: 14px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #38bdf8;
+}
+
+/* Button */
+button {
+    padding: 14px 22px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Result dashboard */
+#result {
+    margin-top: 35px;
+    padding: 25px;
+    background: #111827;
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#result h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+#status {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* Dashboard cards */
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.card h3 {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* Status colors */
+.safe {
+    color: #22c55e;
+}
+
+.suspicious {
+    color: #eab308;
+}
+
+.malicious {
+    color: #ef4444;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
